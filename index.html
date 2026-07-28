@@ -556,10 +556,13 @@
         <button class="export-btn" onclick="exportPNG()">&#11015; PNG</button>
         <button class="export-btn" onclick="exportPDF()">&#11015; PDF</button>
         <button class="export-btn" onclick="exportJSON()">&#11015; JSON</button>
-        <button class="export-btn" onclick="triggerLoadJSON()">&#11014; Load JSON</button>
-        <input type="file" id="json-file-input" accept=".json" style="display:none" onchange="loadFromJSON(event)">
         <span id="export-status">&#10003; Downloaded</span>
         <span id="export-error"></span>
+      </div>
+      <div id="export-bar-inner">
+        <span class="export-label">Import:</span>
+        <button class="export-btn" onclick="triggerLoadJSON()">&#11014; Load JSON</button>
+        <input type="file" id="json-file-input" accept=".json" style="display:none" onchange="loadFromJSON(event)">
       </div>
     </div>
   </div>
