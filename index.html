@@ -217,8 +217,8 @@
 <aside id="sidebar">
   <div id="sidebar-header">
     <div class="brand">
-      <img src="../favicon-192.png" alt="Mason SC" class="brand-logo" />
-      <span class="brand-label">Mason SC</span>
+      <img src="https://cdn.creazilla.com/cliparts/3152377/cube-clipart-sm.png" alt="Ironstone Labs" class="brand-logo" />
+      <span class="brand-label">Ironstone Labs</span>
     </div>
     <input id="client-input" type="text" placeholder="Client Name" title="Click to edit" />
   </div>
@@ -744,7 +744,7 @@ function getClientName() {
   return document.getElementById('client-input').value.trim() || 'CDM';
 }
 
-// Render the matrix (plus Mason SC header) to a canvas, then hand it to cb().
+// Render the matrix (plus header) to a canvas, then hand it to cb().
 function renderCanvas(cb) {
   const svg = document.getElementById('owasp-chart');
   const svgStr = new XMLSerializer().serializeToString(svg);
@@ -761,11 +761,11 @@ function renderCanvas(cb) {
     ctx.fillStyle = '#000000';
     ctx.fillRect(0, 0, canvas.width / scale, canvas.height / scale);
 
-    // Header with Mason SC branding
+    // Header with branding
     ctx.fillStyle = '#e2e8f0';
     ctx.font = 'bold 18px Rajdhani, sans-serif';
     ctx.textAlign = 'right';
-    ctx.fillText('Mason SC', img.naturalWidth - 20, 30);
+    ctx.fillText('Ironstone Labs', img.naturalWidth - 20, 30);
     ctx.font = '12px IBM Plex Mono, monospace';
     ctx.fillText('Cyber Defense Matrix', img.naturalWidth - 20, 50);
 
